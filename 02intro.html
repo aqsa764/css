@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class*="back"] {
+            height: 500px;
+        }
+        .back-color{
+            background-color: teal;
+        }
+        .back-image{
+            background-color: teal;
+            background-image: url(../img/bg.jpg);
+        }
+        .back-attachment{
+            background-color: teal;
+            color: white;
+            background-image: url(../img/bg.jpg);
+            background-attachment: fixed;
+        }
+        .back-clip{
+            background-color: teal;
+            color: white;
+            background-image: url(../img/bg.jpg);
+            margin: 50px;
+            padding: 50px;
+            border: 10px dashed darkblue;
+            outline: 10px dashed green;
+            background-clip: padding-box;
+        }
+        .back-origin{
+            background-color: teal;
+            color: white;
+            background-image: url(../img/bg.jpg);
+            margin: 50px;
+            padding: 50px;
+            border:10px dashed darkblue;
+            outline: 10px dashed green;
+            background-origin: content-box;
+
+        }
+        .back-position{
+            background-color: teal;
+            color: white;
+            background-image: url(../img/bg.jpg);
+            margin: 50px;
+            padding: 50px;
+            border:10px dashed darkblue;
+            outline: 10px dashed green;
+            background-position: bottom ;
+            background-repeat: repeat-x;
+
+        }
+        .back-repeat{
+            background-color: teal;
+            color: white;
+            background-image: url(../img/bg.jpg);
+            margin: 50px;
+            padding: 50px;
+            border:10px dashed darkblue;
+            outline: 10px dashed green;
+            background-repeat: repeat-y;
+        }
+        .back-size{background-color: teal;
+            color: white;
+            background-image: url(../img/bg.jpg);
+            margin: 50px;
+            padding: 50px;
+            border:10px dashed darkblue;
+            outline: 10px dashed green;
+            background-size: contain;
+
+        }
+        .shorthand{
+            height: 400px;
+            background: center / contain no-repeat url(../img/bg.jpg),  #cd7878 35% url(../img/bg2.jpg);
+        }
+        .radial-gradient{
+            height: 400px;
+            background: radial-gradient(purple,white,yellow);
+        }
+        .linear-gradient{
+            height:400px;
+            background: linear-gradient(pink,blue,green);
+        }
+    </style>
+</head>
+<body>
+    <p>
+        The background shorthand CSS property sets all background style properties at once, such as color, image, origin
+        and size, or repeat method. Component properties not set in the background shorthand property value declaration
+        are set to their default values.
+    </p>
+    <div class="back-color">
+        <h2>background-color</h2>
+    </div>
+    <div class="back-image">
+        <h2>background-image</h2>
+    </div>
+    <div class="back-attachment">
+        <h2>background-attachment</h2>
+    </div>
+    <div class="back-clip">
+        <h2>background-clip</h2>
+    </div>
+    <div class="back-origin">
+        <h2>background-origin</h2>
+    </div>
+    <div class="back-position">
+        <h2>background-position</h2>
+    </div>
+    <div class="back-repeat">
+        <h2>background-repeat</h2>
+    </div>
+    <div class="back-size">
+        <h2>background-size</h2>
+    </div>
+    <div class="shorthand">
+        <h2>background shorthand</h2>
+    </div>
+    <div class="radial-gradient">
+        <h2>radial-gradient</h2>
+    </div>
+    <div class="linear-gradient">
+        <h2>linear-gradient</h2>
+    </div>
+
+
+</body>
+</html>
