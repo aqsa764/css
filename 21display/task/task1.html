@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            border: 1px solid;
+            /* margin: 0;
+            padding: 0; */
+        }
+        .d-flex{display: flex; text-align: center;}
+        .flex-wrap .child-box1{width: 44%; height: 200px; background-color: blue; color: aqua;}
+        .flex-wrap .child-box2{width: 24%; height: 200px; background-color: blue; color: aqua;}
+        .flex-wrap .child-box3{width: 29% ; height: 200px; background-color: blue; color: aqua;}
+        .flex-wrap{flex-wrap: wrap; column-gap: 2px;}
+        .column-wrap .child-box1{ width: 45%; height: 20px; background-color: chartreuse; color:black;}
+        .column-wrap .child-box2{width: 24%; height: 20px; background-color: crimson; color:black;}
+        .column-wrap .child-box3{width: 29%; height: 20px; background-color: darkorange; color:black;}
+        .column-wrap{flex-wrap: wrap; row-gap:5px; column-gap: 2px;}
+   
+   </style>
+</head>
+<body>
+    <div class="d-flex flex-wrap">
+        <div class="child-box1">confused</div>
+        <div class="child-box2">happy</div>
+        <div class="child-box3">sad</div>
+    </div>
+    <div class="d-flex column-wrap">
+        <div class="child-box1">warm</div>
+        <div class="child-box2">hot</div>
+        <div class="child-box3">cool</div>
+    </div>
+</body>
+</html>
