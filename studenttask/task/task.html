@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+            color: black;
+        }
+        .row{
+            width: 80vh;
+            height: auto;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .col{
+            height: 150px;
+            /* width: 500px; */
+            background-color: blue;
+            box-shadow: 0 0 20px gray;
+            flex: 1 1 100px;
+            margin: 10px;
+        }
+        img{
+            height: 150px;
+            width: -webkit-fill-available;
+
+        }
+        @media (max-width: 760px) {
+            .col{display: flex;
+            flex-wrap: wrap-reverse;}
+            }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>1 boat sailing!</h2>
+            </div>
+            <div class="col">
+                <img src="../task/boat.jpg" alt="">
+            </div>
+            <div class="col">
+                <h2>3 boat sailing!</h2>
+            </div>
+            <div class="col">
+                <img src="../task/boat.jpg" alt="">
+            </div>
+            <div class="col">
+                <img src="../task/boat.jpg" alt="">
+            </div>
+            <div class="col">
+                <h2>6 boat sailing!</h2>
+            </div>
+            <div class="col">
+                <img src="../task/boat.jpg" alt="">
+            </div>
+            <div class="col">
+                <h2>8 boat sailing!</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
